@@ -1,0 +1,110 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.top-nav {
+  background-color: burlywood;
+  padding: 2% 0;
+}
+
+.top-nav ul {
+  display: grid;
+  grid-template-columns:  3fr 1fr 1fr;
+  list-style: none;
+}
+
+.tagline {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  /* row-gap: 1px; */
+  text-align: center;
+  padding: 50px 0 70px 0;
+  border-bottom: gray solid 0.5px;
+}
+
+.tagline a {
+  padding: 10px 10px;
+  margin: 0 auto;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  align-self: flex-end;
+  /* text-align: center; */
+  padding: 50px 0 70px 0;
+  border-bottom: gray solid 0.5px;
+  font-family: 'Amiri', serif;
+  /* margin: 0 auto;
+  width: 80% */
+}
+
+.quote > blockquote {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 50px;
+  
+  /* border: lightblue 2px solid; */
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.quote > p {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 50px;
+  /* border: lightblue 2px solid; */
+  text-align: end;
+}
+
+.quote > p::before {
+  content: "--";
+}
+
+.why {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 50px 0 70px 0;
+  border-bottom: gray solid 0.5px;
+}
+
+.why h2 {
+    /* place-content: center; */
+    /* content: "psuedo 150px"; */
+    /* display: flex; */
+    /* justify-items: center; */
+    /* justify-self: center; */
+    /* box-sizing: content-box; */
+    /* height: 50%; */
+    /* width: 50%; */
+    /* border: solid 1px; */
+    margin: 30px auto;
+}
+
+.why ul {
+  display: flex;
+}
+
+.why ul li {
+    display: grid;
+    grid-template: 1fr 2fr/ 1fr 2fr;
+}
+
+/* .why ul li img {
+  grid-row-start: 1/ span 3;
+  grid-column-start: 1/ span 3;
+} */
+
+.why ul li p {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
